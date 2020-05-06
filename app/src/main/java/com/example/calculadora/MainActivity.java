@@ -37,16 +37,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void historicoSistema(TextView historico, float res){
-
-        String limpar = historico.toString();
-
-        if(limpar == "Limpa isso"){
-            histContador=0;
-            historico.setText("Histórico\n");
-            return;
-        }
-
-
+        
         if( histContador < 5 ){
             historico.append("\n"+res);
             histContador++;
