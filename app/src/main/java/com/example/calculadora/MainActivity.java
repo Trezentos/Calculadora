@@ -37,11 +37,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void historicoSistema(TextView historico, float res){
-        
+
         if( histContador < 5 ){
             historico.append("\n"+res);
             histContador++;
-        }else{
+        }
+        if(histContador >= 5){
             histContador=0;
             historico.setText("Histórico\n"+res);
         }
